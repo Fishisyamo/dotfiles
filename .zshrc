@@ -116,6 +116,9 @@ RPROMPT="[%*]"
 # -n 行数表示, -I バイナリファイル無視, svn関係のファイルを無視
 alias grep="grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
 
+# .zshrc config
+alias zrc="vim .zshrc"
+
 # ls
 alias ls="ls -G" # color for darwin
 alias l="ls -la"
@@ -130,6 +133,9 @@ alias tns="tmux new -s"
 alias tls="tmux ls"
 alias tat="tmux a -t"
 alias tatt="tmux attach"
+
+# bundle
+alias be="bundle exec"
 
 # -------------------------------------
 # キーバインド
