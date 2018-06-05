@@ -58,7 +58,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 " jキーを２度押しでESCキー
 inoremap <silent> jj <Esc>
-inoremap <silent> っj <ESC>
+inoremap <silent> っj <Esc>
 
 
 " ==== その他 ====
