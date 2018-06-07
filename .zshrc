@@ -96,16 +96,16 @@ function vcs_prompt_info() {
 }
 # end VCS
 
-OK='^_^ '
-NG='x_x '
+OK='◀︎ OK ▶︎'
+NG='▶︎ NG ◀︎'
 
 PROMPT=""
-PROMPT+="%(?.%F{green}$OK%f.%F{red}$NG%f) "
+PROMPT+="%(?.%F{green}$OK%f.%F{red}$NG%f)"
 PROMPT+="%F{blue}%~%f"
 PROMPT+="\$(vcs_prompt_info)"
 PROMPT+="
 "
-PROMPT+="%% "
+PROMPT+="%%"
 
 RPROMPT="[%*]"
 
@@ -117,11 +117,12 @@ RPROMPT="[%*]"
 alias grep="grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
 
 # .zshrc config
-alias zrc="vim .zshrc"
+alias zim="vim .zshrc"
 
 # ls
 alias ls="ls -G" # color for darwin
-alias l="ls -la"
+alias ll="ls -l"
+alias lla="ls -la"
 alias la="ls -a"
 alias l1="ls -1"
 
@@ -133,6 +134,11 @@ alias tns="tmux new -s"
 alias tls="tmux ls"
 alias tat="tmux a -t"
 alias tatt="tmux attach"
+
+# rbenv
+alias rex="rbenv exec"
+alias rlocal="rbenv local"
+alias rglobal="rbenv global"
 
 # bundle
 alias be="bundle exec"
@@ -178,8 +184,8 @@ google(){
 # その他
 # -------------------------------------
 
-# cdしたあとで、自動的に ls する
-function chpwd() { ls -1 }
+# cdしたあとで、自動的に la する
+function chpwd() { la }
 
 # iTerm2のタブ名を変更する
 function title {
