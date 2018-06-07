@@ -100,12 +100,12 @@ OK='◀︎ OK ▶︎'
 NG='▶︎ NG ◀︎'
 
 PROMPT=""
-PROMPT+="%(?.%F{green}$OK%f.%F{red}$NG%f)"
+PROMPT+="%(?.%F{green}$OK%f.%F{red}$NG%f) "
 PROMPT+="%F{blue}%~%f"
 PROMPT+="\$(vcs_prompt_info)"
 PROMPT+="
 "
-PROMPT+="%%"
+PROMPT+="%% "
 
 RPROMPT="[%*]"
 
