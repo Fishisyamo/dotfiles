@@ -134,15 +134,19 @@ alias tns="tmux new -s"
 alias tls="tmux ls"
 alias tat="tmux a -t"
 alias tatt="tmux attach"
+alias tnsm="tns main"
+alias tnsl="tns lessons"
 
 # rbenv
 alias rex="rbenv exec"
-alias rlocal="rbenv local"
-alias rglobal="rbenv global"
+alias rlo="rbenv local"
+alias rglo="rbenv global"
 
 # bundle
 alias be="bundle exec"
 
+# dir
+alias rles="cd ~/RubymineProjects/lessons"
 # -------------------------------------
 # キーバインド
 # -------------------------------------
